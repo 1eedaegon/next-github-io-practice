@@ -6,7 +6,7 @@ const RecentPosts = ({ posts }: { posts: Post[] }) => {
     <section className={`mt-10`}>
       <h1 className={`text-3xl font-extrabold`}>최근 게시물</h1>
       <div className={`flex flex-col`}>
-        {posts.slice(0, 5).map((post: Post | any) => (
+        {posts?.slice(0, 5).map((post: Post) => (
           <Link
             key={post._id}
             className={`md-5`}
